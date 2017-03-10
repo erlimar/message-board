@@ -27,7 +27,7 @@ Message = {
 
 ## API
 
-URL: http://message-board-app.e5r.tech
+URL: http://message-board-app.e5r.tech/api
 
 Métodos disponíveis na API:
 
@@ -36,7 +36,7 @@ Métodos disponíveis na API:
 Obtem a lista com todas as mensagens disponíveis.
 #### Request:
 ```http
-GET /message HTTP/1.1
+GET api/message HTTP/1.1
 Host: message-board-app.e5r.tech
 Accept: application/json
 
@@ -58,7 +58,7 @@ Adiciona uma mensagem no mural que pode ser obtida pelos demais usuaios.
 
 #### Request:
 ```http
-POST /message HTTP/1.1
+POST api/message HTTP/1.1
 Host: message-board-app.e5r.tech
 Content-Type: application/json; charset=utf-8
 Accept: application/json
@@ -86,7 +86,7 @@ Marca uma mensagem como lida por um determinado usuário.
 
 #### Request:
 ```http
-PUT /message HTTP/1.1
+PUT api/message HTTP/1.1
 Host: message-board-app.e5r.tech
 Content-Type: application/json; charset=utf-8
 Accept: application/json
